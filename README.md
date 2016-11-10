@@ -19,17 +19,18 @@ Go into this project directory
 
 To build the project run :
 
-``̀ 
+```
 $ goil --target=avr/arduino/uno --templates=../goil/templates/ main.oil
 ```
 
 To compile it : 
+
 ```
 $ ./make.py
-``̀ 
+```
 
 To flash it in the arduino (assuming /dev/ttyACM0 is the arduino tty):
 
-̀`̀ 
+```
 $ sudo avrdude -c arduino -p m328p -P /dev/ttyACM0 -U flash:w:trampuinoDino.hex
-`̀ ̀ 
+```
